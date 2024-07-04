@@ -82,12 +82,13 @@
           </legend>
           <ul class="fieldset__list fieldset__list--contacts container">
             <li class="fieldset__item">
-              <label class="field field__ico field__ico--email"><span class="field__text">E-mail:* </span><input class="field__input" type="email" name="email" placeholder="catstepan@gmail.com" required>
-              </label>
-            </li>
-            <li class="fieldset__item">
-              <label class="field field__ico field__ico--phone"><span class="field__text">Телефон:* </span><input class="field__input" type="tel" name="phone" placeholder="8 (960) 900-60-90" required></label>
-            </li>
+              <label for="owner-contacts__email">E-mail:<sup>*</sup></label>
+									<input type="email" name="owner-email" placeholder="kuklachev@gmail.com" id="owner-contacts__email" required>
+								</li>
+								<li class="owner-contacts__item owner-contacts__item--phone">
+									<label for="owner-contacts__phone">Телефон:<sup>*</sup></label>
+									<input type="tel" name="owner-phone" placeholder="8 (960) 900-60-90" id="owner-contacts__phone" required>
+								</li>
           </ul>
         </fieldset>
         <div class="form__fieldset form__fieldset--comments fieldset">
