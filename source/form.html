@@ -87,16 +87,13 @@
 								</li>
           </ul>
         </fieldset>
-        <div class="form__fieldset form__fieldset--comments fieldset">
-          <div class="fieldset__wrapper fieldset__wrapper--comments page__divider">
-            <h2 class="page__subtitle container"><span class="page__divider-item">Комментарий</span></h2>
-          </div>
-          <div class="fieldset__list container">
-            <label class="field" for="comments"><span class="visually-hidden">Оставьте Ваш коментарий</span>
-              <textarea class="field__input field__input--comments" name="comments" id="comments" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
-            </label>
-          </div>
-        </div>
+        <fieldset class="selection__box comment">
+							<legend class="selection__subtitle comment__subtitle">Комментарий</legend>
+							<p class="comment__text">
+								<textarea name="comment-text" placeholder="Расскажите обо всех повадках кота" id="comment__text"></textarea>
+								<label class="visually-hidden" for="comment__text">Комментарий</label>
+							</p>
+						</fieldset>
         <fieldset class="form__fieldset form__fieldset--more fieldset">
           <legend class="fieldset__wrapper fieldset__wrapper--more page__divider">
             <h2 class="page__subtitle container"><span class="page__divider-item">Дополнительно</span></h2>
