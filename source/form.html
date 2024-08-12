@@ -74,34 +74,33 @@
             <input class="visually-hidden form__radio" id="advice" type="radio" name="cat-program" value="advice">
             <label class="form__label form__label--radio" for="advice">Не знаю (Нужен ваш совет)</label>
           </fieldset>
-          <fieldset class="form__fieldset form__fieldset--contacts fieldset">
-            <legend class="fieldset__wrapper fieldset__wrapper--contacts page__divider">
-              <h2 class="page__subtitle container"><span class="page__divider-item">Контактные данные <br> (владельца
-                  кота)</span></h2>
-            </legend>
-            <ul class="fieldset__list fieldset__list--contacts container">
-              <li class="fieldset__item">
-                <label for="owner-contacts__email">E-mail:<sup>*</sup></label>
-                <input type="email" name="owner-email" placeholder="kuklachev@gmail.com" id="owner-contacts__email"
-                  required>
-              </li>
-            </ul>
-            <div class="form__inner form__inner-icon">
-              <label class="form__label form__label--phone" for="owner-phone">Телефон:*</label>
-              <input class="form__input form__input--phone" id="owner-phone" type="tel" name="owner-phone"
-                placeholder="8 (960) 900-60-90" required>
-              <div class="form__icon">
-                <svg class="form__svg form__svg--phone" width="20" height="20">
-                  <use xlink:href="#sprite-icon-phone"></use>
-                </svg>
+          <section class="form__wrapper">
+            <div class="form__container container">
+              <h2 class="form__title">Контактные&nbsp;данные (владельца&nbsp;кота)</h2>
+              <div class="form__owner-data">
+                <div class="form__inner">
+                  <label class="form__label form__label--email" for="owner-email">E&#8209;mail:*</label>
+                  <input class="form__input form__input--email" id="owner-email" type="email" name="owner-email" placeholder="kuklachev@gmail.com" required>
+                  <div class="form__icon">
+                    <svg class="form__svg form__svg--email" width="17" height="17">
+                      <use xlink:href="#sprite-icon-mail"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="form__inner form__inner-icon ">
+                  <label class="form__label form__label--phone" for="owner-phone">Телефон:*</label>
+                  <input class="form__input form__input--phone" id="owner-phone" type="tel" name="owner-phone" placeholder="8 (960) 900-60-90" required>
+                  <div class="form__icon">
+                    <svg class="form__svg form__svg--phone" width="20" height="20">
+                      <use xlink:href="#sprite-icon-phone"></use>
+                    </svg>
               </div>
             </div>
-          </fieldset>
+          </section>
           <section class="form__wrapper form__wrapper--comment">
             <div class="form__container container">
               <h2 class="form__title">Комментарий</h2>
-              <textarea class="form__input form__input--comment" name="comment" cols="30" rows="10"
-                placeholder="Расскажите обо всех повадках кота"></textarea>
+              <textarea class="form__input form__input--comment" name="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
             </div>
           </section>
           <fieldset class="form__fieldset form__fieldset--more fieldset">
