@@ -59,19 +59,14 @@
               </li>
             </ul>
           </fieldset>
-            <ul class="fieldset__list  fieldset__list--target container">
-              <li class="fieldset__item">
-                <label class="select select--radio"><input class="select__input" type="radio" name="target" value="slim" checked><span class="select__text"> Похудение</span></label>
-              </li>
-              <li class="fieldset__item">
-                <label class="select select--radio"><input class="select__input" type="radio" name="target" value="fatten"><span class="select__text"> Набор массы</span></label>
-              </li>
-              <li class="fieldset__item">
-                <label class="select select--radio"><input class="select__input" type="radio" name="target" value="offer"><span class="select__text"> Не знаю (Нужен ваш совет)</span></label>
-              </li>
-            </ul>
-          </fieldset>
-        </div>
+            <div class="form__program">
+            <input class="visually-hidden form__radio" id="weight-loss" type="radio" name="cat-program" value="weight-loss" checked>
+            <label class="form__label form__label--radio" for="weight-loss">Похудение</label>
+            <input class="visually-hidden form__radio" id="weight-gain" type="radio" name="cat-program" value="weight-gain">
+            <label class="form__label form__label--radio" for="weight-gain">Набор массы</label>
+            <input class="visually-hidden form__radio" id="advice" type="radio" name="cat-program" value="advice">
+            <label class="form__label form__label--radio" for="advice">Не знаю (Нужен ваш совет)</label>
+          </div>
         <fieldset class="form__fieldset form__fieldset--contacts fieldset">
           <legend class="fieldset__wrapper fieldset__wrapper--contacts page__divider">
             <h2 class="page__subtitle container"><span class="page__divider-item">Контактные данные <br> (владельца кота)</span></h2>
@@ -81,19 +76,22 @@
               <label for="owner-contacts__email">E-mail:<sup>*</sup></label>
 									<input type="email" name="owner-email" placeholder="kuklachev@gmail.com" id="owner-contacts__email" required>
 								</li>
-								<li class="owner-contacts__item owner-contacts__item--phone">
-									<label for="owner-contacts__phone">Телефон:<sup>*</sup></label>
-									<input type="tel" name="owner-phone" placeholder="8 (960) 900-60-90" id="owner-contacts__phone" required>
-								</li>
-          </ul>
-        </fieldset>
-        <fieldset class="selection__box comment">
-							<legend class="selection__subtitle comment__subtitle">Комментарий</legend>
-							<p class="comment__text">
-								<textarea name="comment-text" placeholder="Расскажите обо всех повадках кота" id="comment__text"></textarea>
-								<label class="visually-hidden" for="comment__text">Комментарий</label>
-							</p>
-						</fieldset>
+								<div class="form__inner form__inner-icon">
+              <label class="form__label form__label--phone" for="owner-phone">Телефон:*</label>
+              <input class="form__input form__input--phone" id="owner-phone" type="tel" name="owner-phone" placeholder="8 (960) 900-60-90" required>
+              <div class="form__icon">
+                <svg class="form__svg form__svg--phone" width="20" height="20">
+                  <use xlink:href="#sprite-icon-phone"></use>
+                </svg>
+          </div>
+        </div>
+      </section>
+      <section class="form__wrapper form__wrapper--comment">
+        <div class="form__container container">
+          <h2 class="form__title">Комментарий</h2>
+          <textarea class="form__input form__input--comment" name="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </div>
+      </section>
         <fieldset class="form__fieldset form__fieldset--more fieldset">
           <legend class="fieldset__wrapper fieldset__wrapper--more page__divider">
             <h2 class="page__subtitle container"><span class="page__divider-item">Дополнительно</span></h2>
