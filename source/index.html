@@ -80,16 +80,25 @@
 				</ul>
 				<p class="example__costs">Затраты на питание: <span>15 000 руб.</span></p>
 			</div>
-      <div class="example__images-inner">
-        
-          <div class="example__images">
-          <div class="example__switcher switcher switcher--after">
-            <button class="switcher__button switcher__button--before"><span class="visually-hidden">Было</span></button>
-            <input class="switcher__range" type="range" value="50">
-            <button class="switcher__button switcher__button--after"><span class="visually-hidden">Стало</span></button>
+       <div class="results__image-wrapper">
+          <div class="before-after-slider">
+            <div class="before-after-slider__view before-after-slider__view--before">
+                <img class="before-after-slider__image" src="img/cat-before.png" alt="Изображение кота 'до'">
+            </div>
+
+            <div class="before-after-slider__view before-after-slider__view--after">
+              <img class="before-after-slider__image" src="img/cat-after.png" alt="Изображение кота 'после'">
+            </div>
+
+            <div class="before-after-slider__drag-bar">
+              <div class="before-after-slider__drag-bar-circle">
+                <svg width="24" height="18" viewBox="0 0 24 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8 0L0 9L8 18V0Z" />
+                  <path d="M24 9L16 0V18L24 9Z" />
+                </svg>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
     </section>
   </main>
 	<footer class="page-footer">
